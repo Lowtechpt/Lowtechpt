@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # Mude para 'master' se o seu repositório usar master
+  branch: main # Mude para 'master' se o seu repositório usar master
 
 media_folder: "public/images"
 public_folder: "/images"
@@ -34,7 +34,7 @@ collections:
                 name: "paragraphs"
                 widget: "list"
                 field: {label: "Parágrafo", name: "texto", widget: "text"}
-              - {label: "URL da Imagem (Unsplash ou link direto)", name: "image_url", widget: "string"}
+              - {label: "Imagem", name: "image_url", widget: "image", hint: "Faça upload de uma imagem do seu computador"}
           
           - label: "Processo (Como Trabalhamos)"
             name: "process"
@@ -65,3 +65,17 @@ collections:
             widget: "object"
             fields:
               - {label: "Texto de Copyright", name: "copyright", widget: "string"}
+
+  - name: "blog"
+    label: "Blog (Artigos)"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Imagem de Capa", name: "thumbnail", widget: "image", required: false}
+      - {label: "Resumo", name: "summary", widget: "text"}
+      - {label: "Conteúdo", name: "body", widget: "markdown", hint: "Escreva o seu artigo aqui. Pode usar formatação como negrito, títulos e listas."}
