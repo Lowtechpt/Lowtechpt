@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Mude para 'master' se o seu repositório usar master
+  branch: master # Mude para 'master' se o seu repositório usar master
 
 media_folder: "public/images"
 public_folder: "/images"
