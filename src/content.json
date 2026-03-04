@@ -4,7 +4,8 @@
     "title_highlight": "Merece",
     "title_part2": "um Site à Altura.",
     "subtitle": "Esqueça os templates genéricos. Construo presenças digitais com alma, pensadas para destacar o que torna a sua pequena empresa única.",
-    "cta_text": "Vamos Conversar"
+    "cta_text": "Vamos Conversar",
+    "image_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop"
   },
   "philosophy": {
     "title_part1": "Design não é enfeite.",
@@ -47,6 +48,7 @@
     "email_destination": "lowtechpt@gmail.com"
   },
   "footer": {
-    "copyright": "L.B. Desenvolvimento Criativo."
+    "copyright": "L.B. Desenvolvimento Criativo.",
+    "branding_text": "Portfólio de Freelance Web Design e Desenvolvimento React em Matosinhos, Porto. Focado em resultados para pequenas empresas."
   }
 }

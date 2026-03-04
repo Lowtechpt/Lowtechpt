@@ -47,12 +47,15 @@ export default function Home() {
         {/* Decorative elements */}
         <motion.div 
           style={{ y }}
-          className="absolute right-10 md:right-32 top-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full border border-zinc-800 -z-0"
-        />
-        <div className="absolute left-10 bottom-20 flex items-center gap-4 text-sm font-medium tracking-widest uppercase text-zinc-500 rotate-90 origin-left">
-          <span className="w-12 h-[1px] bg-zinc-500"></span>
-          Role para descobrir
-        </div>
+          className="absolute right-10 md:right-32 top-[15%] md:top-1/4 w-64 h-64 md:w-96 md:h-96 rounded-full border border-zinc-800 -z-0 overflow-hidden"
+        >
+          <img 
+            src={content.hero.image_url} 
+            alt="Web Design e Estratégia Digital" 
+            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-50 hover:opacity-100"
+            referrerPolicy="no-referrer"
+          />
+        </motion.div>
       </section>
 
       {/* Philosophy Section */}
@@ -90,7 +93,7 @@ export default function Home() {
           >
             <img 
               src={content.philosophy.image_url} 
-              alt="Design minimalista" 
+              alt="Ambiente de trabalho focado em design estratégico e desenvolvimento web" 
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               referrerPolicy="no-referrer"
             />

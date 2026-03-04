@@ -130,6 +130,7 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto mt-32 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-light text-zinc-500">
         <p>© {new Date().getFullYear()} {content.footer.copyright}</p>
+        <p className="text-zinc-600 text-xs md:text-sm text-center md:text-right max-w-md">{content.footer.branding_text}</p>
       </div>
     </footer>
   );
