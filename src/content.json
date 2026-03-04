@@ -1,6 +1,6 @@
 {
   "hero": {
-    "title_part1": "O Seu Negócio,",
+    "title_part1": "O Seu Negócio",
     "title_highlight": "Merece",
     "title_part2": "um Site à Altura.",
     "subtitle": "Esqueça os templates genéricos. Construo presenças digitais com alma, pensadas para destacar o que torna a sua pequena empresa única.",
@@ -47,6 +47,6 @@
     "email_destination": "lowtechpt@gmail.com"
   },
   "footer": {
-    "copyright": "L.B. Desenvolvimento Criativo."
+    "copyright": "L.B. Desenvolvimento Criativo"
   }
 }
