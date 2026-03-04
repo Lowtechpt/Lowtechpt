@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main # Mude para 'master' se o seu repositório usar master
+
+media_folder: "public/images"
+public_folder: "/images"
+
+# Configuração para não usar ficheiros separados para cada item, mas sim editar o content.json diretamente
+collections:
+  - name: "conteudo"
+    label: "Conteúdo do Site"
+    files:
+      - label: "Textos e Configurações"
+        name: "textos"
+        file: "src/content.json"
+        fields:
+          - label: "Hero (Secção Inicial)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Título (Parte 1)", name: "title_part1", widget: "string"}
+              - {label: "Título (Destaque em Itálico)", name: "title_highlight", widget: "string"}
+              - {label: "Título (Parte 2)", name: "title_part2", widget: "string"}
+              - {label: "Subtítulo", name: "subtitle", widget: "text"}
+              - {label: "Texto do Botão", name: "cta_text", widget: "string"}
+          
+          - label: "Filosofia"
+            name: "philosophy"
+            widget: "object"
+            fields:
+              - {label: "Título (Parte 1)", name: "title_part1", widget: "string"}
+              - {label: "Título (Destaque em Itálico)", name: "title_highlight", widget: "string"}
+              - label: "Parágrafos de Texto"
+                name: "paragraphs"
+                widget: "list"
+                field: {label: "Parágrafo", name: "texto", widget: "text"}
+              - {label: "URL da Imagem (Unsplash ou link direto)", name: "image_url", widget: "string"}
+          
+          - label: "Processo (Como Trabalhamos)"
+            name: "process"
+            widget: "object"
+            fields:
+              - {label: "Título (Parte 1)", name: "title_part1", widget: "string"}
+              - {label: "Título (Destaque em Itálico)", name: "title_highlight", widget: "string"}
+              - {label: "Subtítulo", name: "subtitle", widget: "text"}
+              - label: "Passos"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - {label: "Número (ex: 01)", name: "num", widget: "string"}
+                  - {label: "Título do Passo", name: "title", widget: "string"}
+                  - {label: "Descrição", name: "desc", widget: "text"}
+          
+          - label: "Contacto"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Título (Parte 1)", name: "title_part1", widget: "string"}
+              - {label: "Título (Destaque em Itálico)", name: "title_highlight", widget: "string"}
+              - {label: "Subtítulo", name: "subtitle", widget: "text"}
+              - {label: "Email para receber os contactos", name: "email_destination", widget: "string"}
+          
+          - label: "Rodapé"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Texto de Copyright", name: "copyright", widget: "string"}

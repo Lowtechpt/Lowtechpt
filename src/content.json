@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "title_part1": "O Seu Negócio",
+    "title_highlight": "Merece",
+    "title_part2": "um Site à Altura.",
+    "subtitle": "Esqueça os templates genéricos. Construo presenças digitais com alma, pensadas para destacar o que torna a sua pequena empresa única.",
+    "cta_text": "Vamos Conversar"
+  },
+  "philosophy": {
+    "title_part1": "Design não é enfeite.",
+    "title_highlight": "É estratégia.",
+    "paragraphs": [
+      "A maioria dos sites de pequenas empresas parece ter saído da mesma fôrma. São invisíveis num mercado saturado.",
+      "Crio landing pages e web apps simples, rápidas e acessíveis, pensadas para transformar visitas em contactos reais.",
+      "Sem ruído.\nSem exageros.\nSem soluções desnecessárias.",
+      "Cada projecto é construído com um objetivo claro: transformar visitas em oportunidades.",
+      "O seu site não deve apenas existir.\nDeve trabalhar para si."
+    ],
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+  },
+  "process": {
+    "title_part1": "Como",
+    "title_highlight": "Trabalhamos",
+    "subtitle": "Um processo transparente, colaborativo e focado em resultados reais para o seu negócio.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Descoberta",
+        "desc": "Mergulhamos na essência da sua marca. Entendemos o seu público, os seus objetivos e o que o torna único no mercado."
+      },
+      {
+        "num": "02",
+        "title": "Criação",
+        "desc": "Desenvolvemos um design exclusivo e uma arquitetura de informação focada em guiar o utilizador até à conversão."
+      },
+      {
+        "num": "03",
+        "title": "Desenvolvimento",
+        "desc": "Código limpo, rápido e otimizado para o Google. O seu site funcionará perfeitamente em qualquer dispositivo."
+      }
+    ]
+  },
+  "contact": {
+    "title_part1": "Vamos construir",
+    "title_highlight": "algo memorável?",
+    "subtitle": "A sua empresa tem uma história única. Deixe os seus dados e o que precisa, e entrarei em contacto o mais rápido possível.",
+    "email_destination": "lowtechpt@gmail.com"
+  },
+  "footer": {
+    "copyright": "L.B. Desenvolvimento Criativo."
+  }
+}
