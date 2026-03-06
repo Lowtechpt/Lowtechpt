@@ -10,31 +10,23 @@ async function startServer() {
   const app = express();
   const PORT = 3000;
 
-  // API routes go here
-  app.get("/api/health", (req, res) => {
-    res.json({ status: "ok" });
+  // No ambiente de desenvolvimento do AI Studio, usamos o Vite como middleware
+  const vite = await createViteServer({
+    server: { 
+      middlewareMode: true,
+      host: '0.0.0.0',
+      port: PORT
+    },
+    appType: 'spa'
   });
 
-  if (process.env.NODE_ENV === "production") {
-    // Serve static files from dist
-    app.use(express.static(path.join(__dirname, "dist")));
-    
-    // SPA fallback: send index.html for any other route
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, "dist", "index.html"));
-    });
-  } else {
-    // Vite middleware for development
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
-  }
+  app.use(vite.middlewares);
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`Server running at http://0.0.0.0:${PORT}`);
   });
 }
 
-startServer();
+startServer().catch((err) => {
+  console.error("Error starting server:", err);
+});
