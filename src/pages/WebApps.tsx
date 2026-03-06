@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import content from '../content.json';
+import ImageLightbox from '../components/ImageLightbox';
 
 export default function WebApps() {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImages, setLightboxImages] = useState<string[]>([]);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (images: string[], index: number) => {
+    setLightboxImages(images);
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
   return (
     <section className="py-32 px-6 md:px-20 min-h-screen">
       <div className="max-w-7xl mx-auto">
@@ -37,11 +48,15 @@ export default function WebApps() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {app.images.map((img, imgIndex) => (
-                  <div key={imgIndex} className={`rounded-xl overflow-hidden shadow-2xl border border-zinc-800 ${imgIndex === 0 ? 'md:col-span-2' : ''}`}>
+                  <div 
+                    key={imgIndex} 
+                    className={`rounded-xl overflow-hidden shadow-2xl border border-zinc-800 cursor-pointer ${imgIndex === 0 ? 'md:col-span-2' : ''}`}
+                    onClick={() => openLightbox(app.images, imgIndex)}
+                  >
                     <img 
                       src={img} 
                       alt={`${app.title} - Vista ${imgIndex + 1}`} 
-                      className="w-full h-auto object-contain"
+                      className="w-full h-auto object-contain hover:scale-105 transition-transform duration-300"
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -51,6 +66,12 @@ export default function WebApps() {
           ))}
         </div>
       </div>
+      <ImageLightbox 
+        images={lightboxImages}
+        initialIndex={lightboxIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
     </section>
   );
 }
