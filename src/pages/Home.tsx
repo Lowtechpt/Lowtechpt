@@ -105,7 +105,7 @@ export default function Home() {
       {/* Process / Services Section */}
       <section id="processo" className="py-32 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20">
             <h2 className="font-serif text-5xl md:text-7xl leading-none">
               {content.process.title_part1} <br />
               <span className="italic text-zinc-400 font-light">{content.process.title_highlight}</span>
