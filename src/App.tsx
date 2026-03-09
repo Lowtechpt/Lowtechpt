@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -12,6 +13,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Analytics />
       <div className="min-h-screen bg-zinc-950 text-zinc-50 selection:bg-zinc-100 selection:text-zinc-900 overflow-hidden flex flex-col">
         <Navbar />
         <main className="flex-grow">
