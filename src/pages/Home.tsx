@@ -139,6 +139,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-32 px-6 md:px-20 bg-zinc-950">
         <div className="max-w-7xl mx-auto">
