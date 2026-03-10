@@ -133,6 +133,37 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-32 px-6 md:px-20 bg-zinc-950">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-serif text-5xl md:text-7xl mb-20">{content.portfolio.title}</h2>
+          <p className="text-zinc-400 mb-10">{content.portfolio.subtitle}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {content.portfolio.projects.map((project, i) => (
+              <a 
+                key={i}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block border border-zinc-800 hover:border-zinc-500 transition-colors"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-medium mb-2 group-hover:text-zinc-400">{project.title}</h3>
+                  <p className="text-zinc-500">Ver projeto →</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
