@@ -71,11 +71,11 @@
         "title": "CRM Comercial - Trabalho Temporário",
         "description": "Uma plataforma completa para gestão de pipeline comercial, análise de propostas e gestão de empresas no setor de trabalho temporário. Inclui dashboards estratégicos e análise de concorrência.",
         "images": [
-          "images/crm1.png",
-          "images/crm2.png",
-          "images/crm3.png",
-          "images/crm4.png",
-          "images/crm5.png"
+          "/images/crm1.png",
+          "/images/crm2.png",
+          "/images/crm3.png",
+          "/images/crm4.png",
+          "/images/crm5.png"
         ]
       }
     ]
