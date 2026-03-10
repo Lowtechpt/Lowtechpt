@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 import content from '../content.json';
 import ImageLightbox from '../components/ImageLightbox';
 
@@ -16,6 +17,11 @@ export default function WebApps() {
 
   return (
     <section className="py-32 px-6 md:px-20 min-h-screen">
+      <Helmet>
+        <title>Web Apps Personalizadas | L.B. Desenvolvimento Criativo</title>
+        <meta name="description" content="Soluções digitais desenhadas à medida das suas necessidades, com uma relação qualidade-preço imbatível no mercado." />
+        <link rel="canonical" href="https://lowtech.pt/web-apps" />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
