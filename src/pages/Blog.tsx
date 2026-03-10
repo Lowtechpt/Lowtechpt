@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { getBlogPosts } from '../utils/blog';
 import { ArrowRight } from 'lucide-react';
 
@@ -9,6 +10,11 @@ export default function Blog() {
 
   return (
     <div className="pt-32 pb-20 px-6 md:px-20 min-h-screen">
+      <Helmet>
+        <title>Blog & Boas Práticas | L.B. Desenvolvimento Criativo</title>
+        <meta name="description" content="Artigos, dicas e reflexões sobre design, estratégia digital e como fazer o seu negócio crescer na internet." />
+        <link rel="canonical" href="https://lowtech.pt/blog" />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import content from '../content.json';
 
 export default function Home() {
@@ -17,6 +18,11 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>L.B. — Web Design & Estratégia para Pequenas Empresas em Matosinhos e Porto</title>
+        <meta name="description" content="Desenvolvo sites, landing pages e web apps focados em resultados para pequenas empresas em Matosinhos, Porto e todo o país. Fuja dos templates genéricos." />
+        <link rel="canonical" href="https://lowtech.pt/" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-20 pt-20">
         <motion.div 

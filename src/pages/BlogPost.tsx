@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Markdown from 'react-markdown';
+import { Helmet } from 'react-helmet-async';
 import { ArrowLeft } from 'lucide-react';
 import { getBlogPost } from '../utils/blog';
 
@@ -16,6 +17,10 @@ export default function BlogPost() {
   if (!post) {
     return (
       <div className="min-h-screen flex items-center justify-center pt-20">
+        <Helmet>
+          <title>Artigo não encontrado | L.B. Desenvolvimento Criativo</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <div className="text-center">
           <h1 className="font-serif text-4xl mb-4">Artigo não encontrado</h1>
           <Link to="/blog" className="text-zinc-400 hover:text-zinc-50 underline">Voltar ao Blog</Link>
@@ -26,6 +31,15 @@ export default function BlogPost() {
 
   return (
     <article className="pt-32 pb-20 px-6 md:px-20 min-h-screen">
+      <Helmet>
+        <title>{post.title} | L.B. Desenvolvimento Criativo</title>
+        <meta name="description" content={post.summary} />
+        <link rel="canonical" href={`https://lowtech.pt/blog/${post.slug}`} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.summary} />
+        {post.thumbnail && <meta property="og:image" content={post.thumbnail} />}
+        <meta property="og:type" content="article" />
+      </Helmet>
       <div className="max-w-3xl mx-auto">
         <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-zinc-500 hover:text-zinc-50 transition-colors mb-12">
           <ArrowLeft size={16} /> Voltar ao Blog
