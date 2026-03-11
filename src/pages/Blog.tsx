@@ -12,8 +12,8 @@ export default function Blog() {
     <div className="pt-32 pb-20 px-6 md:px-20 min-h-screen">
       <Helmet>
         <title>Blog & Boas Práticas | L.B. Desenvolvimento Criativo</title>
-        <meta name="description" content="Artigos, dicas e reflexões sobre design, estratégia digital e como fazer o seu negócio crescer na internet." />
-        <link rel="canonical" href="https://lowtech.pt/blog" />
+        <meta name="description" content="Artigos sobre web design, estratégia digital e como criar websites eficazes em Matosinhos e Porto para pequenas empresas." />
+        <link rel="canonical" href="https://www.lowtech.pt/blog" />
       </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div

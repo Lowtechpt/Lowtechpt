@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lowtech.pt/</loc>
+    <loc>https://www.lowtech.pt</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/web-apps</loc>
+    <loc>https://www.lowtech.pt/web-apps</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog</loc>
+    <loc>https://www.lowtech.pt/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog/automacao-trabalho-temporario</loc>
+    <loc>https://www.lowtech.pt/blog/automacao-trabalho-temporario</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog/boas-praticas-site-empresa</loc>
+    <loc>https://www.lowtech.pt/blog/boas-praticas-site-empresa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog/crm-equipa-comercial</loc>
+    <loc>https://www.lowtech.pt/blog/crm-equipa-comercial</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog/escolher-tecnologia</loc>
+    <loc>https://www.lowtech.pt/blog/escolher-tecnologia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog/impacto-analise-dados</loc>
+    <loc>https://www.lowtech.pt/blog/impacto-analise-dados</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lowtech.pt/blog/web-app-personalizada</loc>
+    <loc>https://www.lowtech.pt/blog/web-app-personalizada</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

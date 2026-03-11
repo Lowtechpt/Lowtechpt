@@ -19,9 +19,9 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>L.B. — Web Design & Estratégia para Pequenas Empresas em Matosinhos e Porto</title>
-        <meta name="description" content="Desenvolvo sites, landing pages e web apps focados em resultados para pequenas empresas em Matosinhos, Porto e todo o país. Fuja dos templates genéricos." />
-        <link rel="canonical" href="https://lowtech.pt/" />
+        <title>L.B. Desenvolvimento Criativo — Web Design & Sites Baratos em Matosinhos</title>
+        <meta name="description" content="Especialista em criação de websites baratos e profissionais para pequenas empresas em Matosinhos e Porto. Landing pages e web apps com design exclusivo e económico." />
+        <link rel="canonical" href="https://www.lowtech.pt" />
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-20 pt-20">

@@ -19,8 +19,8 @@ export default function WebApps() {
     <section className="py-32 px-6 md:px-20 min-h-screen">
       <Helmet>
         <title>Web Apps Personalizadas | L.B. Desenvolvimento Criativo</title>
-        <meta name="description" content="Soluções digitais desenhadas à medida das suas necessidades, com uma relação qualidade-preço imbatível no mercado." />
-        <link rel="canonical" href="https://lowtech.pt/web-apps" />
+        <meta name="description" content="Desenvolvimento de web apps personalizadas e económicas em Matosinhos. Soluções digitais desenhadas à medida com foco em resultados." />
+        <link rel="canonical" href="https://www.lowtech.pt/web-apps" />
       </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div

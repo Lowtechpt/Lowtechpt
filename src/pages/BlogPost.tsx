@@ -34,7 +34,7 @@ export default function BlogPost() {
       <Helmet>
         <title>{post.title} | L.B. Desenvolvimento Criativo</title>
         <meta name="description" content={post.summary} />
-        <link rel="canonical" href={`https://lowtech.pt/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://www.lowtech.pt/blog/${post.slug}`} />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.summary} />
         {post.thumbnail && <meta property="og:image" content={post.thumbnail} />}

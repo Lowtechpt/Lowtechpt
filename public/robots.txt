@@ -4,4 +4,4 @@ Allow: /
 # Evitar que o Google indexe a página de administração do CMS
 Disallow: /admin/
 
-Sitemap: https://lowtech.pt/sitemap.xml
+Sitemap: https://www.lowtech.pt/sitemap.xml
