@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Mail, Phone } from 'lucide-react';
 import content from '../content.json';
 
 export default function Footer() {
@@ -22,6 +22,21 @@ export default function Footer() {
           <p className="text-xl font-light text-zinc-400 mb-12 max-w-md">
             {content.contact.subtitle}
           </p>
+
+          <div className="flex flex-col gap-6 text-zinc-300">
+            <a href={`mailto:${content.contact.email}`} className="flex items-center gap-4 hover:text-zinc-50 transition-colors group">
+              <div className="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center group-hover:border-zinc-500 transition-colors">
+                <Mail size={20} />
+              </div>
+              <span className="text-lg font-light">{content.contact.email}</span>
+            </a>
+            <a href={`tel:${content.contact.phone.replace(/\s/g, '')}`} className="flex items-center gap-4 hover:text-zinc-50 transition-colors group">
+              <div className="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center group-hover:border-zinc-500 transition-colors">
+                <Phone size={20} />
+              </div>
+              <span className="text-lg font-light">{content.contact.phone}</span>
+            </a>
+          </div>
         </motion.div>
 
         <motion.div
